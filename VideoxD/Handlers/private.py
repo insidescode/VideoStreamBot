@@ -8,20 +8,20 @@ from .. import HELP, bot
 
 @bot.on_message(filters.command("alive"))
 async def startxd(client, message):
-    return await message.reply("Yes I am Alive!,Who Cares About Someone Else!")
+    return await message.reply("Zinda Hu Vai")
 
 
 @bot.on_message(filters.command(["start", "help"]) & filters.private)
 async def start(client, message):
     sender_mention = message.from_user.mention
     return await message.reply(
-        f"Hi! {sender_mention}, This is a video streaming bot. Here is a link to my source code!",
+        f"Hi! {sender_mention}, This is a video streaming bot.",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text="Repository",
-                        url="https://github.com/VegetaxD/VideoStreamBot",
+                        text="Updates",
+                        url="t.me/Zer0ByteOfficial",
                     )
                 ],
                 [
@@ -31,8 +31,8 @@ async def start(client, message):
                 ],
                 [
                     InlineKeyboardButton(
-                        text="Demo",
-                        url="https://t.me/VideoStreamingxD?voicechat",
+                        text="Support",
+                        url="t.me/Beluga_Chat",
                     )
                 ],
             ]
